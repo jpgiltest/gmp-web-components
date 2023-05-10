@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps Components Demo</title>
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library"></script>
+    <gmpx-api-loader key="AIzaSyBSlwMi8SayHerFvfsuJ-pjnt4Iph0ZPrY"></gmpx-api-loader>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+<h1>My demo app</h1>
+  <p>Place card </p>
+  
+  <gmpx-place-overview place="ChIJ32vwFWSAhYAR8wx7vbWoSPA" size="medium">
+     <gmpx-icon-button slot="action" icon="restaurant" variant="filled" href="http://go/eat/">See what's for lunch</gmpx-icon-button>
+     <gmpx-place-directions-button slot="action">Directions</gmpx-place-directions-button>
+  </gmpx-place-overview>
+
+  <p>Map</p>
+  
+  <gmp-map center="37.62171,-122.30459" zoom="8" map-id="DEMO_MAP_ID" style="width: 100%; height: 300px;"></gmp-map>
+
+
+
+
+
+</body>
+</html>
